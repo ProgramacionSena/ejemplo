@@ -5,59 +5,6 @@
         <!-- el elemento <title> HTML define el titulo del documento que se muestra en un browser, en la barra                                                               
             de titulo o la pestaña de una pagina -->
         <title>CPP</title>
-        <script>
-                function aleatorio(min, max) {
-                        return Math.floor(Math.random() * (max - min + 1) + min)
-                }   
-                // 1 es piedra, 2 es papel,es tigera   
-            let min= 1
-            let max= 3
-            let temp= false
-            // 1 es piedra, 2 es papel,es tigera    
-            let jugador=0
-            // En la siguiente linea se invocara la funcion aleatoria
-            let pc= aleatorio(1,3)
-
-            jugador = prompt("Elige: 1:piedra 2:Papel 3:tijera")
-            //alert("tu elegiste " + jugador)
-            //el == se usa para comparar
-            if (jugador == 1){
-                        alert("elegiste 🪨")
-            } else if (jugador == 2){
-                        alert("elegiste 📄")
-            } else if (jugador == 3){
-                        alert("elegiste ✂️")
-                        //este codigo no es adecuado aqui, porque cuando escoge alguna opcion que no es 1, 2 o 3 escogeria tigeras, con un else if se puede arreglar y un else
-            } else{alert("elegiste no participar")
-            } 
-              
-        //-----------------------------------------------------------------------------------------------------------
-        //temp = (jugador==1||jugador==2||jugador==3)
-       // console.log(temp)
-
-       if( jugador==1||jugador==2||jugador==3){
-           if(pc == 1) {
-                alert("pc elige 🪨")
-        } else if(pc ==2) {
-                alert("pc elige 📄")
-        } else if(pc == 3) {
-                alert("pc elige ✂️")
-        }      
-         // COMBATE------------------------------------------------------------------------------
-         if(pc == jugador) {
-                alert("EMPATE")
-         } else if(jugador == 1 && pc == 3) {
-                alert("GANASTE")
-         } else if(jugador == 2 && pc == 1) {
-                alert("GANASTE")
-         } else if(jugador == 3 && pc == 2) {
-                alert("GANASTE")
-         } else{
-                alert("PERDISTE")
-         }
-        }
-              
-        </script>
     </head>
     <body>
         <h1>piedra,papel,tijera
